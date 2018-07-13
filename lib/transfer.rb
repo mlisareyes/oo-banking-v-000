@@ -29,6 +29,7 @@ class Transfer
       self.status = "reversed"
     else
       bad_transfer
+    end
   end
 
   def bad_transfer
