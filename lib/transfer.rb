@@ -14,8 +14,8 @@ class Transfer
 
   def execute_transaction
     ApplicationRecord.transaction do
-    receiver.update!(money: receiver.money + 100)
-    sender.update!(money: sender.money - 100)
+    receiver.update!(money: receiver.money + 50)
+    sender.update!(money: sender.money - 50)
   end
 end#need successful transaction between two accounts
     #can only happen once
