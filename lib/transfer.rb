@@ -21,5 +21,4 @@ class Transfer
     #can only happen once
     #rejects transfer if sender doesn't have a valid account
 
-
 end
