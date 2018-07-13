@@ -25,12 +25,6 @@ class Transfer
       self.status = 'rejected'
       "Transaction rejected. Please check your account balance."
     end
-
-
-
-    #need successful transaction between two accounts
-    #can only happen once
-    #rejects transfer if sender doesn't have a valid account
   end
 
 end
