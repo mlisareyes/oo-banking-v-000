@@ -15,8 +15,6 @@ class Transfer
   def execute_transaction
     sender.balance == 950
   end
-    
-  
-  end
+
 
 end
