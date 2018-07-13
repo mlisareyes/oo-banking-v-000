@@ -13,6 +13,7 @@ class Transfer
   end
 
   def execute_transaction
+    if valid? && sender.balance > amount && self.status == "pending"
 
     #need successful transaction between two accounts
     #can only happen once
