@@ -22,6 +22,11 @@ class Transfer
     end
   end
 
+  def bad_transfer
+    self.status = "pending"
+    "Transaction rejected. Please check your account balance."
+  end
+
   def reverse_transfer
   end
 
