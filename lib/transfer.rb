@@ -13,7 +13,11 @@ class Transfer
   end
 
   def execute_transaction
-    #need successful transaction between two accounts
+    ApplicationRecord.transaction do
+    receiver.update!(money: receiver.money + 100)
+    sender.update!(money: sender.money - 100)
+  end
+end#need successful transaction between two accounts
     #can only happen once
     #rejects transfer if sender doesn't have a valid account
 
